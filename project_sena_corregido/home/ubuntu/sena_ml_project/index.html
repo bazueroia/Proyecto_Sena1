@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inducción de Instructores SENA - Machine Learning</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-section">
+                <img src="./images/sena_logo.png" alt="Logo SENA" class="logo">
+                <div class="header-text">
+                    <h1>Inducción de Instructores SENA</h1>
+                    <p>Optimización mediante Machine Learning</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegación con pestañas -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-tabs">
+                <li><a href="#inicio" class="tab-link active" data-tab="inicio">Inicio</a></li>
+                <li><a href="#problema" class="tab-link" data-tab="problema">El Problema</a></li>
+                <li><a href="#fundamentosml" class="tab-link" data-tab="fundamentosml">Fundamentos ML</a></li>
+                <li><a href="#modelo" class="tab-link" data-tab="modelo">Modelo Propuesto</a></li>
+                <li><a href="#implementacion" class="tab-link" data-tab="implementacion">Implementación</a></li>
+                <li><a href="#conclusiones" class="tab-link" data-tab="conclusiones">Conclusiones</a></li>
+                <li><a href="#acerca" class="tab-link" data-tab="acerca">Acerca de</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Pestaña: Inicio -->
+            <section id="inicio" class="tab-content active">
+                <div class="content-wrapper">
+                    <div class="text-section">
+                        <h2>Bienvenido al Proyecto de Inducción SENA</h2>
+                        <p>Este proyecto presenta una solución innovadora basada en <strong>Machine Learning</strong> para optimizar el proceso de inducción y entrenamiento inicial de nuevos instructores en el Servicio Nacional de Aprendizaje (SENA).</p>
+                        <p>La pregunta problema que guía este proyecto es: <em>¿Cómo diseñar e implementar un proceso de inducción y entrenamiento inicial para los nuevos instructores que ingresan al SENA, con el fin de garantizar su adecuada integración y desempeño desde el inicio de su vinculación a la entidad?</em></p>
+                        <p>A través de técnicas avanzadas de inteligencia artificial, buscamos personalizar la experiencia de cada instructor, optimizar la asignación de recursos educativos y mejorar significativamente los resultados del proceso de inducción.</p>
+                        <div class="cta-buttons">
+                            <button class="btn btn-primary" onclick="scrollToTab('problema')">Conocer el Problema</button>
+                            <button class="btn btn-secondary" onclick="scrollToTab('modelo')">Ver el Modelo</button>
+                        </div>
+                    </div>
+                    <div class="image-section">
+                        <img src="./images/sena_building.jpg" alt="Centro SENA" class="tab-image">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pestaña: El Problema -->
+            <section id="problema" class="tab-content">
+                <h2>El Desafío de la Inducción en el SENA</h2>
+                <div class="content-wrapper">
+                    <div class="text-section">
+                        <h3>Contexto Actual</h3>
+                        <p>El Servicio Nacional de Aprendizaje (SENA) es una institución de formación profesional integral que recibe constantemente nuevos instructores. Sin embargo, el proceso de inducción y entrenamiento inicial presenta varios desafíos:</p>
+                        <ul class="feature-list">
+                            <li><strong>Falta de Personalización:</strong> Los programas de inducción suelen ser genéricos y no se adaptan a las necesidades específicas de cada instructor.</li>
+                            <li><strong>Asignación Ineficiente de Recursos:</strong> Los recursos educativos no siempre se distribuyen de manera óptima según el perfil del instructor.</li>
+                            <li><strong>Evaluación Subjetiva:</strong> La evaluación del desempeño inicial carece de criterios objetivos y basados en datos.</li>
+                            <li><strong>Integración Lenta:</strong> El tiempo de integración y productividad de nuevos instructores es prolongado.</li>
+                            <li><strong>Falta de Seguimiento Continuo:</strong> No existe un sistema de monitoreo continuo del progreso y desempeño.</li>
+                        </ul>
+                        <h3>Impacto</h3>
+                        <p>Estos desafíos resultan en una menor eficiencia operativa, mayor rotación de personal y una experiencia de inducción subóptima para los nuevos instructores.</p>
+                    </div>
+                    <div class="image-section">
+                        <img src="./images/sena_general.jpg" alt="Ambiente SENA" class="tab-image">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pestaña: Fundamentos de Machine Learning -->
+            <section id="fundamentosml" class="tab-content">
+                <h2>Fundamentos de Machine Learning</h2>
+                <p>Machine Learning es una rama de la Inteligencia Artificial que permite a los sistemas aprender y mejorar su desempeño sin ser explícitamente programados. A continuación, se presentan los conceptos clave:</p>
+                
+                <div class="ml-concepts">
+                    <div class="concept-card">
+                        <h3>¿Qué es Machine Learning?</h3>
+                        <p>Machine Learning es un conjunto de técnicas que permiten a los algoritmos aprender patrones en los datos y hacer predicciones o decisiones basadas en esos patrones.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Tipos de Machine Learning</h3>
+                        <ul>
+                            <li><strong>Aprendizaje Supervisado:</strong> El modelo aprende de datos etiquetados (entrada-salida conocida).</li>
+                            <li><strong>Aprendizaje No Supervisado:</strong> El modelo identifica patrones en datos sin etiquetar.</li>
+                            <li><strong>Aprendizaje por Refuerzo:</strong> El modelo aprende mediante interacción y recompensas.</li>
+                        </ul>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Aplicaciones en Educación</h3>
+                        <p>Machine Learning se utiliza para personalizar el aprendizaje, predecir desempeño, recomendar recursos educativos y optimizar procesos administrativos.</p>
+                    </div>
+                </div>
+
+                <div class="ml-workflow">
+                    <h3>Flujo de Trabajo de Machine Learning</h3>
+                    <div class="workflow-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <p><strong>Recopilación de Datos</strong></p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <p><strong>Preparación de Datos</strong></p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <p><strong>Selección del Modelo</strong></p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <p><strong>Entrenamiento</strong></p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <p><strong>Evaluación</strong></p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">6</div>
+                            <p><strong>Implementación</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pestaña: Modelo Propuesto -->
+            <section id="modelo" class="tab-content">
+                <h2>Modelo de Machine Learning Propuesto</h2>
+                <p>El modelo propuesto utiliza técnicas de Machine Learning para optimizar el proceso de inducción de instructores SENA. El modelo integra múltiples componentes:</p>
+
+                <div class="model-components">
+                    <div class="component">
+                        <h3>1. Sistema de Recomendación Personalizado</h3>
+                        <p>Utiliza algoritmos colaborativos y basados en contenido para recomendar recursos educativos, módulos de entrenamiento y mentores según el perfil del instructor.</p>
+                    </div>
+                    <div class="component">
+                        <h3>2. Predicción de Desempeño</h3>
+                        <p>Mediante modelos de regresión y clasificación, predice el desempeño esperado del instructor durante la inducción y en sus primeros meses de trabajo.</p>
+                    </div>
+                    <div class="component">
+                        <h3>3. Análisis de Integración</h3>
+                        <p>Identifica factores clave que influyen en la integración exitosa y proporciona insights para mejorar el proceso.</p>
+                    </div>
+                    <div class="component">
+                        <h3>4. Monitoreo Continuo</h3>
+                        <p>Realiza seguimiento en tiempo real del progreso del instructor y ajusta las recomendaciones dinámicamente.</p>
+                    </div>
+                </div>
+
+                <div class="model-architecture">
+                    <h3>Arquitectura del Modelo</h3>
+                    <div class="architecture-box">
+                        <p><strong>Entrada:</strong> Datos del instructor (perfil, experiencia, competencias, preferencias)</p>
+                        <p><strong>Procesamiento:</strong> Algoritmos de ML (clustering, clasificación, regresión)</p>
+                        <p><strong>Salida:</strong> Recomendaciones personalizadas, predicciones de desempeño, plan de inducción optimizado</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pestaña: Implementación -->
+            <section id="implementacion" class="tab-content">
+                <h2>Implementación y Resultados Esperados</h2>
+                
+                <h3>Fases de Implementación</h3>
+                <div class="implementation-phases">
+                    <div class="phase">
+                        <h4>Fase 1: Recopilación y Preparación de Datos</h4>
+                        <p>Se recopilan datos históricos de instructores previos, incluyendo perfiles, resultados de inducción y desempeño. Los datos se limpian, normalizan y preparan para el entrenamiento del modelo.</p>
+                    </div>
+                    <div class="phase">
+                        <h4>Fase 2: Desarrollo del Modelo</h4>
+                        <p>Se desarrollan y entrenan múltiples modelos de ML, se validan y se selecciona el de mejor desempeño. Se utilizan técnicas de validación cruzada para garantizar la robustez.</p>
+                    </div>
+                    <div class="phase">
+                        <h4>Fase 3: Integración en Plataforma</h4>
+                        <p>El modelo se integra en una plataforma web o aplicación que los coordinadores de inducción pueden utilizar para gestionar el proceso de forma optimizada.</p>
+                    </div>
+                    <div class="phase">
+                        <h4>Fase 4: Pruebas Piloto</h4>
+                        <p>Se realiza una prueba piloto con un grupo de nuevos instructores para validar la efectividad del modelo en condiciones reales.</p>
+                    </div>
+                    <div class="phase">
+                        <h4>Fase 5: Despliegue y Monitoreo</h4>
+                        <p>Se despliega el modelo a nivel institucional y se monitorea continuamente su desempeño, realizando ajustes según sea necesario.</p>
+                    </div>
+                </div>
+
+                <h3>Resultados Esperados</h3>
+                <div class="expected-results">
+                    <div class="result-item">
+                        <h4>Reducción del Tiempo de Inducción</h4>
+                        <p>Se espera reducir el tiempo promedio de inducción en un 30-40% mediante la personalización y optimización del proceso.</p>
+                    </div>
+                    <div class="result-item">
+                        <h4>Mejora en el Desempeño</h4>
+                        <p>Los instructores que completen el proceso optimizado mostrarán un desempeño 25-35% superior en sus primeros meses.</p>
+                    </div>
+                    <div class="result-item">
+                        <h4>Mayor Retención</h4>
+                        <p>Una mejor experiencia de inducción resultará en una mayor retención de instructores, reduciendo la rotación de personal.</p>
+                    </div>
+                    <div class="result-item">
+                        <h4>Eficiencia Operativa</h4>
+                        <p>La automatización y optimización del proceso liberarán recursos que pueden dedicarse a otras actividades estratégicas.</p>
+                    </div>
+                </div>
+
+                <h3>Tecnologías Utilizadas</h3>
+                <div class="technologies">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">Scikit-learn</span>
+                    <span class="tech-badge">TensorFlow</span>
+                    <span class="tech-badge">Pandas</span>
+                    <span class="tech-badge">Flask/Django</span>
+                    <span class="tech-badge">PostgreSQL</span>
+                    <span class="tech-badge">Docker</span>
+                </div>
+            </section>
+
+            <!-- Pestaña: Conclusiones -->
+            <section id="conclusiones" class="tab-content">
+                <h2>Conclusiones y Futuro</h2>
+                
+                <h3>Hallazgos Principales</h3>
+                <p>Este proyecto demuestra que la aplicación de Machine Learning en el proceso de inducción de instructores SENA es viable y prometedora. Los principales hallazgos incluyen:</p>
+                <ul class="findings-list">
+                    <li>La personalización basada en datos mejora significativamente los resultados de la inducción.</li>
+                    <li>Los algoritmos de ML pueden identificar patrones de éxito que no son evidentes para los evaluadores humanos.</li>
+                    <li>La automatización de recomendaciones libera tiempo para interacciones más significativas.</li>
+                    <li>El monitoreo continuo permite intervenciones tempranas cuando es necesario.</li>
+                </ul>
+
+                <h3>Impacto Potencial</h3>
+                <p>La implementación exitosa de este modelo podría transformar la forma en que el SENA gestiona la inducción de instructores, resultando en una institución más eficiente, instructores mejor preparados y, en última instancia, estudiantes que reciben una educación de mayor calidad.</p>
+
+                <h3>Futuras Líneas de Investigación</h3>
+                <div class="future-lines">
+                    <div class="future-item">
+                        <h4>Integración de Análisis de Sentimientos</h4>
+                        <p>Utilizar procesamiento de lenguaje natural para analizar feedback y evaluar la satisfacción del instructor.</p>
+                    </div>
+                    <div class="future-item">
+                        <h4>Modelos Predictivos Avanzados</h4>
+                        <p>Desarrollar modelos de deep learning para predicciones más precisas del desempeño a largo plazo.</p>
+                    </div>
+                    <div class="future-item">
+                        <h4>Gamificación Inteligente</h4>
+                        <p>Incorporar elementos de gamificación adaptativa basada en ML para aumentar el engagement.</p>
+                    </div>
+                    <div class="future-item">
+                        <h4>Análisis Comparativo Institucional</h4>
+                        <p>Extender el modelo a otros centros SENA para análisis comparativos y mejora continua.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pestaña: Acerca de -->
+            <section id="acerca" class="tab-content">
+                <h2>Acerca de Este Proyecto</h2>
+                <div class="about-section">
+                    <div class="about-content">
+                        <h3>Autor</h3>
+                        <p><strong>Belisario Azuero Portacio</strong></p>
+                        <p>Instructor SENA</p>
+                        <p>Centro de Comercio, Medellín</p>
+
+                        <h3>Año de Realización</h3>
+                        <p><strong>2025</strong></p>
+
+                        <h3>Descripción del Proyecto</h3>
+                        <p>Este proyecto presenta una solución innovadora que combina Machine Learning con procesos educativos para optimizar la inducción de nuevos instructores en el SENA. El objetivo es garantizar una integración más rápida, efectiva y personalizada de los nuevos miembros del equipo docente.</p>
+
+                        <h3>Objetivos Específicos</h3>
+                        <ul class="objectives-list">
+                            <li>Diseñar un modelo de Machine Learning adaptado a las necesidades de inducción del SENA.</li>
+                            <li>Implementar un sistema de recomendación personalizado para recursos educativos.</li>
+                            <li>Desarrollar herramientas de predicción de desempeño basadas en datos.</li>
+                            <li>Crear una plataforma que facilite la gestión del proceso de inducción.</li>
+                            <li>Evaluar el impacto del modelo en la eficiencia y satisfacción de instructores.</li>
+                        </ul>
+
+                        <h3>Contacto y Colaboración</h3>
+                        <p>Para más información sobre este proyecto o para colaborar en futuras fases de desarrollo, por favor contacte al autor a través del SENA Centro de Comercio en Medellín.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Belisario Azuero Portacio - Instructor SENA Centro de Comercio, Medellín</p>
+            <p>Proyecto de Inducción de Instructores SENA mediante Machine Learning</p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
